@@ -11,7 +11,7 @@ from sklearn.neighbors import NearestNeighbors
 model = KNN.Model()
 model.initModel()
 nbrs = NearestNeighbors(n_neighbors=17, algorithm='ball_tree')
-nbrs.fit(model.WordFea_pca)  # 构造BallTree，可以快速找出6个最近邻居，原理待学习
+nbrs.fit(model.WordFea_pca)  # 构造BallTree
 
 # 用PCA降维
 pca = PCA(n_components=600)
